@@ -5,7 +5,7 @@ module.exports = {
       style: 'expanded'
     },
     files: {
-      'css/build/global.css': 'components/s.less'
+      'css/main.css': 'components/main/s.less'
     }
   }
 }

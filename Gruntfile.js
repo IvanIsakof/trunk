@@ -38,7 +38,6 @@ module.exports = function(grunt) {
 
     return object;
   }
-
   // Initial config
   var config = {
     pkg: grunt.file.readJSON('package.json')
@@ -56,7 +55,7 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default Task is basically a rebuild
-  grunt.registerTask('default', ['less', 'autoprefixer', 'watch']);
+  grunt.registerTask('default', ['svg_sprite', 'svgmin', 'less', 'autoprefixer']);
 
   // Moved to the tasks folder:
   // grunt.registerTask('dev', ['connect', 'watch']);

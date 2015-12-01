@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    title= Home
+    link(rel="stylesheet", href="css/main.css")
+  body
+    include sprite.svg
+  -
+    list = ["Uno", "Dos", "Tres",
+        "Cuatro", "Cinco", "Seis"]
+  ul
+    each item in list
+      li= item
+
+  svg(class="star")
+      use(xlink:href="#star")
